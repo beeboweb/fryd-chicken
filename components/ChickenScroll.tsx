@@ -31,7 +31,7 @@ export function ChickenScroll({ targetRef }: ChickenScrollProps) {
           const img = new Image()
           // Pad number with zeros: 001, 002, ...
           const frameNum = i.toString().padStart(3, '0')
-          img.src = `${activeProduct.imageFolder}/frame_${frameNum}.jpg`
+          img.src = `${activeProduct.imageFolder}/frame_${frameNum}.webp`
           img.onload = () => {
              loadedImages[i - 1] = img // Preserve order
              resolve()

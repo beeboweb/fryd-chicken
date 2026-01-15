@@ -27,11 +27,11 @@ export default function Home() {
   ]
 
   const kitchenImages = [
-    { src: "/images/restaurant/counter-front.jpg", alt: "FRYD Counter" },
-    { src: "/images/restaurant/interior-wide.jpg", alt: "FRYD Interior" },
-    { src: "/images/restaurant/kiosk-tiles.jpg", alt: "FRYD Kiosk" },
-    { src: "/images/restaurant/counter-angle.jpg", alt: "FRYD Counter Angle" },
-    { src: "/images/restaurant/red-lighting.jpg", alt: "FRYD Vibes" },
+    { src: "/images/restaurant/counter-front.webp", alt: "FRYD Counter" },
+    { src: "/images/restaurant/interior-wide.webp", alt: "FRYD Interior" },
+    { src: "/images/restaurant/kiosk-tiles.webp", alt: "FRYD Kiosk" },
+    { src: "/images/restaurant/counter-angle.webp", alt: "FRYD Counter Angle" },
+    { src: "/images/restaurant/red-lighting.webp", alt: "FRYD Vibes" },
   ]
 
   return (
@@ -92,7 +92,7 @@ export default function Home() {
                 </div>
                 <div className="aspect-square relative overflow-hidden border-2 border-black group">
                     <Image 
-                      src="/images/restaurant/interior-wide.jpg"
+                      src="/images/restaurant/interior-wide.webp"
                       alt="FRYD Restaurant Interior"
                       fill
                       className="object-cover group-hover:scale-105 transition-transform duration-500"
