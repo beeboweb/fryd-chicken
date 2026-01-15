@@ -11,10 +11,10 @@ export function OverlayUI() {
     <div className="absolute inset-0 z-10 pointer-events-none w-full h-full">
          <div className="sticky top-0 h-screen w-full flex items-center justify-center">
              <div className="text-center px-4">
-                 <h1 className="text-5xl md:text-9xl font-black text-white uppercase tracking-tighter mb-4 mix-blend-difference">
+                 <h1 className="text-6xl md:text-[10rem] font-black text-white uppercase tracking-tighter mb-4 mix-blend-difference">
                     {product.title}
                  </h1>
-                 <p className="text-sm md:text-2xl font-bold text-white uppercase tracking-widest mix-blend-difference">
+                 <p className="text-lg md:text-4xl font-bold text-white uppercase tracking-widest mix-blend-difference">
                     {product.subtitle}
                  </p>
              </div>

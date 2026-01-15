@@ -117,9 +117,12 @@ export default function Home() {
                 <Card key={product.id} className="border-2 border-black bg-white overflow-hidden group hover:border-primary transition-colors">
                   <CardContent className="p-0">
                     <div className="aspect-square bg-neutral-200 relative overflow-hidden">
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        <span className="text-6xl">🍗</span>
-                      </div>
+                      <Image 
+                        src={`/images/products/${product.id}_mock.png`}
+                        alt={product.title}
+                        fill
+                        className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
                       <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors"></div>
                     </div>
                     <div className="p-6">
