@@ -83,9 +83,9 @@ export default function Home() {
                    <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter mb-6">
                        NOT JUST <span className="text-primary">FAST</span> FOOD.
                    </h2>
-                   <p className="text-lg md:text-xl font-medium text-neutral-600 mb-8 leading-relaxed">
-                       We don't do heat lamps. We don't do frozen patties. Every single piece of chicken is marinated for 24 hours in our secret blend of 11 herbs and spices, then hand-breaded and pressure fried to order. 
-                   </p>
+                    <p className="text-lg md:text-xl font-medium text-neutral-600 mb-8 leading-relaxed">
+                        We don&apos;t do heat lamps. We don&apos;t do frozen patties. Every single piece of chicken is marinated for 24 hours in our secret blend of 11 herbs and spices, then hand-breaded and pressure fried to order. 
+                    </p>
                    <Button variant="outline" className="h-14 text-lg border-black text-black hover:bg-black hover:text-white uppercase font-bold px-8 transition-all hover:scale-105">
                        Our Story
                    </Button>
@@ -114,8 +114,8 @@ export default function Home() {
             
             <div className="grid md:grid-cols-3 gap-6">
               {products.map((product) => (
-                <Card key={product.id} className="border-2 border-black bg-white overflow-hidden group hover:border-primary transition-colors">
-                  <CardContent className="p-0">
+                <Card key={product.id} className="border-2 border-black bg-white overflow-hidden group hover:border-primary transition-colors h-full flex flex-col">
+                  <CardContent className="p-0 flex flex-col flex-grow">
                     <div className="aspect-square bg-neutral-200 relative overflow-hidden">
                       <Image 
                         src={`/images/products/${product.id}_mock.png`}
@@ -125,13 +125,13 @@ export default function Home() {
                       />
                       <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors"></div>
                     </div>
-                    <div className="p-6">
+                    <div className="p-6 flex flex-col flex-grow">
                       <div className="flex justify-between items-start mb-2">
                         <h3 className="text-xl font-black uppercase tracking-tight">{product.title}</h3>
                         <span className="text-xl font-black text-primary">{product.price}</span>
                       </div>
                       <p className="text-neutral-500 font-medium text-sm mb-4">{product.description}</p>
-                      <Button className="w-full bg-black text-white hover:bg-primary uppercase font-bold h-12 transition-all hover:scale-[1.02]">
+                      <Button className="w-full bg-black text-white hover:bg-primary uppercase font-bold h-12 transition-all hover:scale-[1.02] mt-auto">
                         Order Now
                       </Button>
                     </div>
@@ -198,7 +198,7 @@ export default function Home() {
               <Button className="bg-white text-black hover:bg-black hover:text-white uppercase font-bold h-14 px-8 text-lg transition-all hover:scale-105">
                 Find Your FRYD
               </Button>
-              <Button variant="outline" className="border-white text-white hover:bg-white hover:text-primary uppercase font-bold h-14 px-8 text-lg transition-all hover:scale-105">
+              <Button variant="outline" className="border-white text-white bg-transparent hover:bg-white hover:text-primary uppercase font-bold h-14 px-8 text-lg transition-all hover:scale-105">
                 Order Online
               </Button>
             </div>
